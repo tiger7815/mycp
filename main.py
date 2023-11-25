@@ -36,6 +36,12 @@ import logging
 #     api_hash=api_hash,
 #     bot_token=bot_token)
 
+from vars import API_ID as api_id
+from vars import API_HASH as api_hash
+from vars import BOT_TOKEN as bot_token
+from vars import OWNER_ID as owner
+from vars import SUDO_USERS as sudo_users
+
 from logging.handlers import RotatingFileHandler
 
 logging.basicConfig(
