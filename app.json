@@ -1,0 +1,38 @@
+{
+    "name": "ADR LEECH BOT",
+    "description": "Download videos from various websites using this telegram bot",
+    "repository": "https://github.com/Adrenalinators/TXTLeechBot",
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get your telegram API ID from https://my.telegram.org",
+            "value": "YOUR_TELEGRAM_API_ID"
+        },
+        "API_HASH": {
+            "description": "Get your telegram API HASH from https://my.telegram.org",
+            "value": "YOUR_TELEGRAM_API_HASH"
+        },
+        "BOT_TOKEN": {
+            "description": "Get from BotFather",
+            "value": "YOUR_TELEGRAM_BOT_TOKEN"
+        },
+        "AUTH_USERS": {
+            "description": "Admin/Owner/Friends ID Seperate by ',' Ex: 44578878,8878899",
+            "value": "YOUR_AUTH_USERS_IDS"
+        },
+        "AUTH_GROUPS": {
+            "description": "IDs of group where bot will leech. Make sure to make bot admin of that group with full permission.(use rose bot of id)",
+            "value": "YOUR_AUTH_GROUPS_IDS"
+        }
+    }
+}
