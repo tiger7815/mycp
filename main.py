@@ -58,9 +58,9 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [270462968,320218356]
+auth_users = [1713924419,999741495]
 sudo_users = auth_users
-sudo_groups = [-1001956259734]
+sudo_groups = [-1002049391187]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
@@ -108,7 +108,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="https://t.me/Adrenalinators",
+                url="https://t.me/Adr",
             ),
             InlineKeyboardButton(
                 text="Repo",
@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : उससे क्या होगा काम से काम रखो 😂 @Adrenalinators**\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
+            "Hello Bruh **I am Classplus and other Text Downloader Bot**. I can download videos from any **text** file one by one.**\n\nDeveloper** : उससे क्या होगा काम से काम रखो 😂 **\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
