@@ -56,7 +56,7 @@ logging = logging.getLogger()
 
 bot = Client("bot",
              bot_token=os.environ.get("6152562853:AAGimPmtvHjqcE8em9iDMH-QAjkM8133P0c"),
-             api_id=int(os.environ.get("22779671")),
+             api_id=(os.environ.get("22779671")),
              api_hash=os.environ.get("125d8d88b77309dc3b154cbbfc2dacb2"))
 auth_users = [1713924419,999741495]
 sudo_users = auth_users
