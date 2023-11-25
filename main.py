@@ -21,20 +21,20 @@ import aiohttp
 import asyncio
 import aiofiles
 from pyrogram.types import User, Message
-# import progressor
-# from progressor import progress_for_pyrogram
-#import sys
+import progressor
+from progressor import progress_for_pyrogram
+import sys
 import re
 import os
 import io
 import logging
 #import pycurl
 
-# bot = Client(
-#     "bot",
-#     api_id=api_id,
-#     api_hash=api_hash,
-#     bot_token=bot_token)
+ bot = Client(
+     "bot",
+     api_id = "25218674"
+     api_hash = "87c231f0e8704795b8239d06965b4351"
+     bot_token = "6953702071:AAHg25sMiG6Fm6_19VU5pVw0uz4-es-ptp0"
 
 from logging.handlers import RotatingFileHandler
 
