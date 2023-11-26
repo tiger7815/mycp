@@ -1,4 +1,4 @@
-# ADR BOT
+# classplss BOT
 
 ## Deploy To Heroku
 
@@ -11,7 +11,7 @@
 
 If you need help deploying the bot, you can watch this tutorial video on YouTube:
 
-[![Tutorial Video](https://img.shields.io/badge/Watch-Tutorial%20-red.svg?logo=youtube)](https://youtu.be/ejVSt4kY_jk)
+[![Tutorial Video](https://img.shields.io/badge/Watch-Tutorial%20-red.svg?logo=youtube)](https://youtube.com/)
 ## Contact Me
 
 If you have any questions or concerns, feel free to contact me via Telegram:
