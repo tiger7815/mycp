@@ -11,7 +11,7 @@ from pyrogram.types import Message
 import pyrogram
 import tgcrypto
 from p_bar import progress_bar
-from details import api_id, api_hash, bot_token
+#from details import api_id, api_hash, bot_token
 from subprocess import getstatusoutput
 import helper
 import logging
@@ -23,7 +23,7 @@ import aiofiles
 from pyrogram.types import User, Message
 # import progressor
 # from progressor import progress_for_pyrogram
-import sys
+#import sys
 import re
 import os
 import io
@@ -35,12 +35,6 @@ import logging
 #     api_id=api_id,
 #     api_hash=api_hash,
 #     bot_token=bot_token)
-
-from vars import API_ID as api_id
-from vars import API_HASH as api_hash
-from vars import BOT_TOKEN as bot_token
-from vars import OWNER_ID as owner
-from vars import SUDO_USERS as sudo_users
 
 from logging.handlers import RotatingFileHandler
 
@@ -62,7 +56,7 @@ logging = logging.getLogger()
 
 bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
-             api_id=(os.environ.get("API_ID")),
+             api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
 auth_users = [1713924419,999741495]
 sudo_users = auth_users
@@ -114,7 +108,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="https://t.me/Adr",
+                url="https://t.me/Adrenalinators",
             ),
             InlineKeyboardButton(
                 text="Repo",
@@ -154,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Classplus and other Text Downloader Bot**. I can download videos from any **text** file one by one.**\n\nDeveloper** : उससे क्या होगा काम से काम रखो 😂 **\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
+            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : उससे क्या होगा काम से काम रखो 😂 @Adrenalinators**\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
